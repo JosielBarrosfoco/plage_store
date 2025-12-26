@@ -116,7 +116,11 @@ export const Footer = () => {
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin size={16} className="text-primary mt-0.5" />
-                832 Avenida General Ataíde Teive
+                <div>
+                  <div>832 Avenida General Ataíde Teive</div>
+                  <div>Mecejana, Boa Vista - RR</div>
+                  <div>CEP: 69304-360</div>
+                </div>
               </li>
             </ul>
           </div>

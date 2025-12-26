@@ -153,10 +153,12 @@ const Contact = () => {
                 <MapPin size={20} className="text-primary" />
                 <h3 className="font-semibold">Localização</h3>
               </div>
-              <p className="text-sm text-muted-foreground">
-                832 Avenida General Ataíde Teive
-              </p>
-              <p className="text-sm text-muted-foreground mt-2">
+              <div className="text-sm text-muted-foreground space-y-1">
+                <p>832 Avenida General Ataíde Teive</p>
+                <p>Mecejana, Boa Vista - RR</p>
+                <p>CEP: 69304-360</p>
+              </div>
+              <p className="text-sm text-muted-foreground mt-3">
                 Atendemos clientes de todo o Brasil e exterior de forma remota.
               </p>
             </div>
