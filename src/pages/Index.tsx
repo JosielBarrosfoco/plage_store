@@ -239,7 +239,7 @@ const Index = () => {
                 </Link>
               </Button>
               <Button variant="outline" size="xl" asChild>
-                <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5595984240100" target="_blank" rel="noopener noreferrer">
                   Falar no WhatsApp
                 </a>
               </Button>
