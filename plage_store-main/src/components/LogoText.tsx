@@ -9,19 +9,22 @@ export const LogoText = memo(({ className = "" }: { className?: string }) => {
         visibility: 'visible',
         display: 'flex',
         opacity: 1,
+        position: 'relative',
+        zIndex: 10,
       }}
     >
-      {/* PLAGE com gradiente */}
+      {/* PLAGE com gradiente - versão que funciona em todos os navegadores */}
       <span 
         className="text-2xl md:text-3xl font-extrabold tracking-wider"
         style={{
-          background: 'linear-gradient(90deg, #3b82f6 0%, #6366f1 50%, #8b5cf6 100%)',
+          backgroundImage: 'linear-gradient(90deg, #3b82f6 0%, #6366f1 50%, #8b5cf6 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
           display: 'inline-block',
           lineHeight: '1.2',
           color: '#3b82f6', // Fallback caso o gradiente não funcione
+          fontWeight: 800,
         }}
       >
         PLAGE
@@ -32,6 +35,7 @@ export const LogoText = memo(({ className = "" }: { className?: string }) => {
         style={{
           color: '#64748b',
           lineHeight: '1.2',
+          fontWeight: 600,
         }}
       >
         STORE
