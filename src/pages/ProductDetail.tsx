@@ -120,7 +120,7 @@ const ProductDetail = () => {
                   Comprar Agora
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5595984240100" target="_blank" rel="noopener noreferrer">
                     <MessageCircle size={20} />
                     Tirar Dúvidas
                   </a>
