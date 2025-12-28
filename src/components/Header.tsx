@@ -42,7 +42,7 @@ export const Header = () => {
 
           <div className="hidden md:flex items-center gap-4">
             <Button variant="outline" size="sm" asChild>
-              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5595984240100" target="_blank" rel="noopener noreferrer">
                 WhatsApp
               </a>
             </Button>
@@ -81,7 +81,7 @@ export const Header = () => {
               ))}
               <div className="flex flex-col gap-3 pt-4 border-t border-border/50">
                 <Button variant="outline" asChild>
-                  <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5595984240100" target="_blank" rel="noopener noreferrer">
                     WhatsApp
                   </a>
                 </Button>
