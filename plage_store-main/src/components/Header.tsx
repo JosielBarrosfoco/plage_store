@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
+import { LogoText } from "./LogoText";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -21,7 +22,7 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex items-center gap-2">
-            <Logo className="h-8 md:h-10 w-auto" />
+            <LogoText className="h-8 md:h-10" />
           </Link>
 
           {/* Desktop Navigation */}

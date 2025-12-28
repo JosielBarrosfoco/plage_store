@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Instagram, Github } from "lucide-react";
 import { Logo } from "./Logo";
+import { LogoText } from "./LogoText";
 
 export const Footer = () => {
   return (
@@ -9,7 +10,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <Logo className="h-8 w-auto" />
+            <LogoText className="h-8" />
             <p className="text-muted-foreground text-sm leading-relaxed">
               Softhouse especializada em soluções digitais premium. 
               Transformamos ideias em produtos que geram resultados.
