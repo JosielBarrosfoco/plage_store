@@ -1,6 +1,10 @@
-import { memo } from "react";
+import { memo, useId } from "react";
 
 export const Logo = memo(({ className = "h-8 md:h-10 w-auto" }: { className?: string }) => {
+  const id = useId();
+  const plageGradientId = `plageGradient-${id}`;
+  const storeGradientId = `storeGradient-${id}`;
+  
   return (
     <svg 
       width="200" 
@@ -13,12 +17,12 @@ export const Logo = memo(({ className = "h-8 md:h-10 w-auto" }: { className?: st
       aria-label="PLAGE STORE"
     >
       <defs>
-        <linearGradient id="plageGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <linearGradient id={plageGradientId} x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" style={{ stopColor: "#3b82f6", stopOpacity: 1 }} />
           <stop offset="50%" style={{ stopColor: "#6366f1", stopOpacity: 1 }} />
           <stop offset="100%" style={{ stopColor: "#8b5cf6", stopOpacity: 1 }} />
         </linearGradient>
-        <linearGradient id="storeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <linearGradient id={storeGradientId} x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" style={{ stopColor: "#64748b", stopOpacity: 1 }} />
           <stop offset="100%" style={{ stopColor: "#94a3b8", stopOpacity: 1 }} />
         </linearGradient>
@@ -31,7 +35,7 @@ export const Logo = memo(({ className = "h-8 md:h-10 w-auto" }: { className?: st
         fontFamily="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" 
         fontSize="32" 
         fontWeight="800" 
-        fill="url(#plageGradient)" 
+        fill={`url(#${plageGradientId})`}
         letterSpacing="2"
       >
         PLAGE
@@ -44,15 +48,15 @@ export const Logo = memo(({ className = "h-8 md:h-10 w-auto" }: { className?: st
         fontFamily="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" 
         fontSize="20" 
         fontWeight="600" 
-        fill="url(#storeGradient)" 
+        fill={`url(#${storeGradientId})`}
         letterSpacing="1.5"
       >
         STORE
       </text>
       
       {/* Linha decorativa elegante */}
-      <line x1="0" y1="36" x2="120" y2="36" stroke="url(#plageGradient)" strokeWidth="3" strokeLinecap="round"/>
-      <circle cx="122" cy="36" r="2" fill="url(#plageGradient)"/>
+      <line x1="0" y1="36" x2="120" y2="36" stroke={`url(#${plageGradientId})`} strokeWidth="3" strokeLinecap="round"/>
+      <circle cx="122" cy="36" r="2" fill={`url(#${plageGradientId})`}/>
     </svg>
   );
 });
