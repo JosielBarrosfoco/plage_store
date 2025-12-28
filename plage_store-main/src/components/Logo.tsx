@@ -15,16 +15,17 @@ export const Logo = memo(({ className = "h-8 md:h-10 w-auto" }: { className?: st
       className={className}
       role="img"
       aria-label="PLAGE STORE"
+      style={{ display: 'block' }}
     >
       <defs>
         <linearGradient id={plageGradientId} x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style={{ stopColor: "#3b82f6", stopOpacity: 1 }} />
-          <stop offset="50%" style={{ stopColor: "#6366f1", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#8b5cf6", stopOpacity: 1 }} />
+          <stop offset="0%" stopColor="#3b82f6" stopOpacity="1" />
+          <stop offset="50%" stopColor="#6366f1" stopOpacity="1" />
+          <stop offset="100%" stopColor="#8b5cf6" stopOpacity="1" />
         </linearGradient>
         <linearGradient id={storeGradientId} x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style={{ stopColor: "#64748b", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#94a3b8", stopOpacity: 1 }} />
+          <stop offset="0%" stopColor="#64748b" stopOpacity="1" />
+          <stop offset="100%" stopColor="#94a3b8" stopOpacity="1" />
         </linearGradient>
       </defs>
       
@@ -32,11 +33,12 @@ export const Logo = memo(({ className = "h-8 md:h-10 w-auto" }: { className?: st
       <text 
         x="0" 
         y="32" 
-        fontFamily="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" 
+        fontFamily="Arial, sans-serif" 
         fontSize="32" 
         fontWeight="800" 
         fill={`url(#${plageGradientId})`}
         letterSpacing="2"
+        style={{ fontFamily: 'Arial, sans-serif' }}
       >
         PLAGE
       </text>
@@ -45,11 +47,12 @@ export const Logo = memo(({ className = "h-8 md:h-10 w-auto" }: { className?: st
       <text 
         x="125" 
         y="32" 
-        fontFamily="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" 
+        fontFamily="Arial, sans-serif" 
         fontSize="20" 
         fontWeight="600" 
         fill={`url(#${storeGradientId})`}
         letterSpacing="1.5"
+        style={{ fontFamily: 'Arial, sans-serif' }}
       >
         STORE
       </text>
