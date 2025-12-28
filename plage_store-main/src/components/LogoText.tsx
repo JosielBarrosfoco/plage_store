@@ -8,8 +8,10 @@ export const LogoText = memo(({ className = "" }: { className?: string }) => {
         minWidth: '180px',
         visibility: 'visible',
         display: 'flex',
+        opacity: 1,
       }}
     >
+      {/* PLAGE com gradiente */}
       <span 
         className="text-2xl md:text-3xl font-extrabold tracking-wider"
         style={{
@@ -19,10 +21,12 @@ export const LogoText = memo(({ className = "" }: { className?: string }) => {
           backgroundClip: 'text',
           display: 'inline-block',
           lineHeight: '1.2',
+          color: '#3b82f6', // Fallback caso o gradiente não funcione
         }}
       >
         PLAGE
       </span>
+      {/* STORE */}
       <span 
         className="text-lg md:text-xl font-semibold tracking-wide"
         style={{
