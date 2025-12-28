@@ -169,7 +169,7 @@ const Services = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="lg" asChild>
-              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5595984240100" target="_blank" rel="noopener noreferrer">
                 <MessageCircle size={20} />
                 Falar no WhatsApp
               </a>
