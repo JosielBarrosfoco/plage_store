@@ -6,7 +6,7 @@ export const Logo = memo(({ className = "h-8 md:h-10 w-auto" }: { className?: st
   const storeGradientId = `storeGradient-${id}`;
   
   return (
-    <div className={`flex items-center ${className}`} style={{ minWidth: '160px' }}>
+    <div className={`flex items-center gap-2 ${className}`} style={{ minWidth: '160px' }}>
       <svg 
         width="200" 
         height="50" 
@@ -17,6 +17,7 @@ export const Logo = memo(({ className = "h-8 md:h-10 w-auto" }: { className?: st
         role="img"
         aria-label="PLAGE STORE"
         preserveAspectRatio="xMidYMid meet"
+        style={{ display: 'block', maxWidth: '100%', height: 'auto' }}
       >
         <defs>
           <linearGradient id={plageGradientId} x1="0%" y1="0%" x2="100%" y2="0%">
@@ -39,6 +40,7 @@ export const Logo = memo(({ className = "h-8 md:h-10 w-auto" }: { className?: st
           fontWeight="800" 
           fill={`url(#${plageGradientId})`}
           letterSpacing="2"
+          dominantBaseline="middle"
         >
           PLAGE
         </text>
@@ -52,6 +54,7 @@ export const Logo = memo(({ className = "h-8 md:h-10 w-auto" }: { className?: st
           fontWeight="600" 
           fill={`url(#${storeGradientId})`}
           letterSpacing="1.5"
+          dominantBaseline="middle"
         >
           STORE
         </text>
