@@ -108,11 +108,11 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail size={16} className="text-primary" />
-                contato@plage.com.br
+                atendimento@plagestore.com.br
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone size={16} className="text-primary" />
-                (00) 00000-0000
+                (95) 98124-9755
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin size={16} className="text-primary mt-0.5" />

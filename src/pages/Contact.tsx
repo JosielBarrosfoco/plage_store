@@ -16,20 +16,20 @@ const contactInfo = [
   {
     icon: Mail,
     label: "E-mail",
-    value: "contato@plage.com.br",
-    href: "mailto:contato@plage.com.br",
+    value: "atendimento@plagestore.com.br",
+    href: "mailto:atendimento@plagestore.com.br",
   },
   {
     icon: Phone,
     label: "Telefone",
-    value: "(00) 00000-0000",
-    href: "tel:+5500000000000",
+    value: "(95) 98124-9755",
+    href: "tel:+5595981249755",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    value: "(00) 00000-0000",
-    href: "https://wa.me/5500000000000",
+    value: "(95) 98124-9755",
+    href: "https://wa.me/5595981249755",
   },
   {
     icon: Clock,
@@ -137,7 +137,7 @@ const Contact = () => {
               </p>
               <Button variant="hero" className="w-full" asChild>
                 <a
-                  href="https://wa.me/5500000000000"
+                  href="https://wa.me/5595981249755"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
