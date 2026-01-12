@@ -121,3 +121,4 @@ Para garantir atualizações em tempo real:
 - **Vercel Docs:** https://vercel.com/docs
 - **Hostinger DNS:** https://www.hostinger.com.br/tutoriais/como-configurar-dns
 
+
